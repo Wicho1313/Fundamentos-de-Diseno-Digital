@@ -1,0 +1,190 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Sun Apr 08 19:40:55 2018
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'entradas'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : prac_6.tt3
+    Device library       : P22V10G.dev
+
+Output files:
+
+    Report file          : prac_6.rpt
+    Programmer load file : prac_6.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Sun Apr 08 19:40:55 2018
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+F1     = (  A & B & C & D & E );
+
+F2     = !(  !A & !B & !C & !D & !E );
+
+F3     = (  !B & C & D & F3_c_1 
+          #   B & !C & D & F3_c_1 
+          #   B & C & !D & F3_c_1 
+          #   !B & !C & !D & F3_c_1 
+          #   B & C & D & !F3_c_1 
+          #   !B & !C & D & !F3_c_1 
+          #   !B & C & !D & !F3_c_1 
+          #   B & !C & !D & !F3_c_1 );
+
+F4     = !(  A & B & C & D & E );
+
+F5     = (  !A & !B & !C & !D & !E );
+
+F6     = (  B & C & D & F3_c_1 
+          #   !B & !C & D & F3_c_1 
+          #   !B & C & !D & F3_c_1 
+          #   B & !C & !D & F3_c_1 
+          #   !B & C & D & !F3_c_1 
+          #   B & !C & D & !F3_c_1 
+          #   B & C & !D & !F3_c_1 
+          #   !B & !C & !D & !F3_c_1 );
+
+F3_c_1     = (  !A & E 
+              #   A & !E );
+
+
+
+                                                                      Page 3
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Sun Apr 08 19:40:55 2018
+
+P22V10G Chip Diagram:
+--------------------------------------------------------------------------------
+
+
+
+
+                                   P22V10G
+
+                         +---------\       /---------+
+                         |          \     /          |
+                         |           -----           |
+                       A |  1                    24  | Vcc                     
+                         |                           |
+                       B |  2                    23  | F3_c_1                  
+                         |                           |
+                       C |  3                    22  | F5                      
+                         |                           |
+                       D |  4                    21  | F3                      
+                         |                           |
+                       E |  5                    20  | F1                      
+                         |                           |
+                         |  6                    19  |                         
+                         |                           |
+                         |  7                    18  |                         
+                         |                           |
+                         |  8                    17  |                         
+                         |                           |
+                         |  9                    16  | !F2                     
+                         |                           |
+                         | 10                    15  | !F4                     
+                         |                           |
+                         | 11                    14  | F6                      
+                         |                           |
+                     GND | 12                    13  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Sun Apr 08 19:40:55 2018
+
+P22V10G Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |      5      |    7 ( 58 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |      7      |    3 ( 30 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      0      |   10 (100 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 5
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Sun Apr 08 19:40:55 2018
+
+P22V10G Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+F1                                       |   20     |   1   |  14   |  13
+F2                                       |   16     |   1   |  12   |  11
+F3                                       |   21     |   8   |  12   |   4
+F4                                       |   15     |   1   |  10   |   9
+F5                                       |   22     |   1   |  10   |   9
+F6                                       |   14     |   8   |   8   |   0
+F3_c_1                                   |   23     |   2   |   8   |   6
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+A                                        |    1     | CLK/IN
+B                                        |    2     | INPUT
+C                                        |    3     | INPUT
+D                                        |    4     | INPUT
+E                                        |    5     | INPUT
+F3_c_1                                   |   23     | BIDIR
+
+
+                                                                      Page 6
+ispLEVER Classic 2.0.00.17.20.15  -  Device Utilization Chart         Sun Apr 08 19:40:55 2018
+
+P22V10G Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+    6  |  INPUT |      -      |    -   
+    7  |  INPUT |      -      |    -   
+    8  |  INPUT |      -      |    -   
+    9  |  INPUT |      -      |    -   
+   10  |  INPUT |      -      |    -   
+   11  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   
+   17  |  BIDIR | NORMAL 14   |    D
+   18  |  BIDIR | NORMAL 16   |    D
+   19  |  BIDIR | NORMAL 16   |    D

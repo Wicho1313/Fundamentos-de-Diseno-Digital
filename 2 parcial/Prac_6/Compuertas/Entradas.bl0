@@ -1,0 +1,82 @@
+#$ DATE Sun Apr 08 19:40:50 2018
+#$ TOOL EDIF2BLIF version IspLever 1.0 
+#$ MODULE entradas
+#$ PINS 11 A B C D E F1 F2 F3 F4 F5 F6
+#$ NODES 25 F3_i F1_i A_c B_c C_c D_c E_c F1_c F2_c F3_c \
+#  A_c_i B_c_i C_c_i D_c_i E_c_i F2_i F2_i_1 F2_i_2 F2_i_3 F1_c_1 \
+#  F1_c_2 F1_c_3 F3_c_1 F3_c_2 F3_c_3 
+.model entradas
+.inputs A.BLIF B.BLIF C.BLIF D.BLIF E.BLIF F3_i.BLIF F1_i.BLIF A_c.BLIF B_c.BLIF \
+  C_c.BLIF D_c.BLIF E_c.BLIF F1_c.BLIF F2_c.BLIF F3_c.BLIF A_c_i.BLIF B_c_i.BLIF C_c_i.BLIF \
+  D_c_i.BLIF E_c_i.BLIF F2_i.BLIF F2_i_1.BLIF F2_i_2.BLIF F2_i_3.BLIF F1_c_1.BLIF F1_c_2.BLIF F1_c_3.BLIF \
+  F3_c_1.BLIF F3_c_2.BLIF F3_c_3.BLIF  
+.outputs F1 F2 F3 F4 F5 F6 F3_i F1_i A_c B_c C_c \
+  D_c E_c F1_c F2_c F3_c A_c_i B_c_i C_c_i D_c_i E_c_i F2_i \
+  F2_i_1 F2_i_2 F2_i_3 F1_c_1 F1_c_2 F1_c_3 F3_c_1 F3_c_2 F3_c_3
+.names  A.BLIF A_c
+1 1
+.names  B.BLIF B_c
+1 1
+.names  C.BLIF C_c
+1 1
+.names  D.BLIF D_c
+1 1
+.names  E.BLIF E_c
+1 1
+.names  F1_c.BLIF F1
+1 1
+.names  F2_c.BLIF F2
+1 1
+.names  F3_c.BLIF F3
+1 1
+.names  F1_i.BLIF F4
+1 1
+.names  F2_i.BLIF F5
+1 1
+.names  F3_i.BLIF F6
+1 1
+.names  F3_c_3.BLIF D_c.BLIF F3_c
+01 1
+10 1
+.names  C_c.BLIF C_c_i
+0 1
+.names  D_c.BLIF D_c_i
+0 1
+.names  E_c.BLIF E_c_i
+0 1
+.names  F2_i.BLIF F2_c
+0 1
+.names  E_c_i.BLIF A_c_i.BLIF F2_i_1
+11 1
+.names  B_c_i.BLIF C_c_i.BLIF F2_i_2
+11 1
+.names  F2_i_1.BLIF F2_i_2.BLIF F2_i_3
+11 1
+.names  F2_i_3.BLIF D_c_i.BLIF F2_i
+11 1
+.names  E_c.BLIF A_c.BLIF F1_c_1
+11 1
+.names  B_c.BLIF C_c.BLIF F1_c_2
+11 1
+.names  F1_c_1.BLIF F1_c_2.BLIF F1_c_3
+11 1
+.names  F1_c_3.BLIF D_c.BLIF F1_c
+11 1
+.names  E_c.BLIF A_c.BLIF F3_c_1
+01 1
+10 1
+.names  B_c.BLIF C_c.BLIF F3_c_2
+01 1
+10 1
+.names  F3_c_1.BLIF F3_c_2.BLIF F3_c_3
+01 1
+10 1
+.names  F3_c.BLIF F3_i
+0 1
+.names  F1_c.BLIF F1_i
+0 1
+.names  A_c.BLIF A_c_i
+0 1
+.names  B_c.BLIF B_c_i
+0 1
+.end

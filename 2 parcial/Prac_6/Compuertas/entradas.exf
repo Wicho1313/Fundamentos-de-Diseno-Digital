@@ -1,0 +1,19 @@
+Section Cross Reference File
+Design 'Entradas' created Sun Apr 08 19:40:50 2018
+   Type              New Name                               Original Name
+// ----------------------------------------------------------------------
+End
+Section Type      Name
+// ----------------------------------------------------------------------
+        Input     A
+        Input     B
+        Input     C
+        Input     D
+        Input     E
+        Output     F1
+        Output     F2
+        Output     F3
+        Output     F4
+        Output     F5
+        Output     F6
+End

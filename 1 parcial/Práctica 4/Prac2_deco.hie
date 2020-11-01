@@ -1,0 +1,2 @@
+deco.vhd #Entity deco 3
+deco.vhd #Architecture adeco deco 16

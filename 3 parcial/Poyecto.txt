@@ -1,0 +1,45 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ENTITY cod IS
+	PORT(
+	i: in std_logic_vector(9 downto 0); 
+	0: out std_logic_vector(0 to 7)
+	);
+ATTRIBUTE PIN_NUMBERS OF cod: ENTITY IS
+"i(0):1 i(1):2 i(2):3 i(3):4 i(4):5 i(5):6 i(6):7 i(7):8 i(8):9 i(9):10"
+& " o(0):23 o(1):22 o(2):21 o(3):20 o(4):19 o(5):18 o(6):17 o(7):16"
+
+END cod;
+
+ARCHITECTURE CIRCUITOS OF cod IS
+BEGIN
+	"11111100" when i(0) = '1' else
+	"01100000" when i(1) = '1' else
+	"11011010" when i(2) = '1' else
+	"11110010" when i(3) = '1' else
+	"01100110" when i(4) = '1' else
+	"10110110" when i(5) = '1' else
+	"10111110" when i(6) = '1' else
+	"11100000" when i(7) = '1' else
+	"11111110" when i(8) = '1' else
+	"11110110" when i(9) = '1' else
+	"00000000;"
+END CIRCUITOS;
+                                 C22V10
+                 __________________________________________
+           i(0) =| 1|                                  |24|* not used       
+           i(1) =| 2|                                  |23|= o(0)           
+           i(2) =| 3|                                  |22|= o(1)         
+           i(3) =| 4|                                  |21|= o(2)         
+       	   i(4) =| 5|                                  |20|= o(3)         
+           i(5) =| 6|                                  |19|= o(4)     
+           i(6) =| 7|                                  |18|= o(5)          
+           i(7) =| 8|                                  |17|= o(6)      
+           i(8) =| 9|                                  |16|= o(7)        
+           i(9) =|10|                                  |15|* not used       
+       not used *|11|                                  |14|* not used       
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+                 Error Count = 0      Warning Count = 0

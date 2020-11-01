@@ -1,0 +1,102 @@
+ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design entradas created Sun Apr 08 19:40:50 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/5        5        1    Pin   F1 
+   5/1        5        1    Pin-  F2 
+   8/8        4        1    Pin   F3 
+   5/1        5        1    Pin-  F4 
+   1/5        5        1    Pin   F5 
+   8/8        4        1    Pin   F6 
+   2/2        2        1    Node  F3_c_1 
+=========
+  30/30         Best P-Term Total: 22
+                       Total Pins: 11
+                      Total Nodes: 1
+            Average P-Term/Output: 3
+
+
+Equations:
+
+F1 = (A & B & C & D & E);
+
+F2 = (A
+     # B
+     # C
+     # D
+     # E);
+
+F3 = (!B & C & D & F3_c_1
+     # B & !C & D & F3_c_1
+     # B & C & !D & F3_c_1
+     # !B & !C & !D & F3_c_1
+     # B & C & D & !F3_c_1
+     # !B & !C & D & !F3_c_1
+     # !B & C & !D & !F3_c_1
+     # B & !C & !D & !F3_c_1);
+
+F4 = (!A
+     # !B
+     # !C
+     # !D
+     # !E);
+
+F5 = (!A & !B & !C & !D & !E);
+
+F6 = (B & C & D & F3_c_1
+     # !B & !C & D & F3_c_1
+     # !B & C & !D & F3_c_1
+     # B & !C & !D & F3_c_1
+     # !B & C & D & !F3_c_1
+     # B & !C & D & !F3_c_1
+     # B & C & !D & !F3_c_1
+     # !B & !C & !D & !F3_c_1);
+
+F3_c_1 = (!A & E
+     # A & !E);
+
+
+Reverse-Polarity Equations:
+
+!F1 = (!A
+     # !B
+     # !C
+     # !D
+     # !E);
+
+!F2 = (!A & !B & !C & !D & !E);
+
+!F3 = (B & C & D & F3_c_1
+     # !B & !C & D & F3_c_1
+     # !B & C & !D & F3_c_1
+     # B & !C & !D & F3_c_1
+     # !B & C & D & !F3_c_1
+     # B & !C & D & !F3_c_1
+     # B & C & !D & !F3_c_1
+     # !B & !C & !D & !F3_c_1);
+
+!F4 = (A & B & C & D & E);
+
+!F5 = (A
+     # B
+     # C
+     # D
+     # E);
+
+!F6 = (!B & C & D & F3_c_1
+     # B & !C & D & F3_c_1
+     # B & C & !D & F3_c_1
+     # !B & !C & !D & F3_c_1
+     # B & C & D & !F3_c_1
+     # !B & !C & D & !F3_c_1
+     # !B & C & !D & !F3_c_1
+     # B & !C & !D & !F3_c_1);
+
+!F3_c_1 = (A & E
+     # !A & !E);
+

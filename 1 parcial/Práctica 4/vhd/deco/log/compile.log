@@ -1,0 +1,7 @@
+ Compilation with file reorder...
+ File: C:\Documents and Settings\escom\Escritorio\Prac\vhd\deco.vhd
+ Compile Entity "deco"
+ Compile Architecture "DSMB" of Entity "deco"
+ Top-Level unit detected
+ Entity  =>   deco
+ Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

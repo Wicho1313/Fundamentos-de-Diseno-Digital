@@ -1,0 +1,140 @@
+EDIF2BLIF version IspLever 1.0  Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design entradas created Sun Apr 08 19:40:50 2018
+
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   1/1        1        1    Pin   F1 
+   1/1        1        1    Pin   F2 
+   1/1        1        1    Pin   F3 
+   1/1        1        1    Pin   F4 
+   1/1        1        1    Pin   F5 
+   1/1        1        1    Pin   F6 
+   1          1        1    Node  F3_i 
+   1          1        1    Node  F1_i 
+   1/1        1        1    Node  A_c 
+   1/1        1        1    Node  B_c 
+   1/1        1        1    Node  C_c 
+   1/1        1        1    Node  D_c 
+   1/1        1        1    Node  E_c 
+   1          2        1    Node  F1_c 
+   1          1        1    Node  F2_c 
+   2          2        1    Node  F3_c 
+   1          1        1    Node  A_c_i 
+   1          1        1    Node  B_c_i 
+   1          1        1    Node  C_c_i 
+   1          1        1    Node  D_c_i 
+   1          1        1    Node  E_c_i 
+   1          2        1    Node  F2_i 
+   1          2        1    Node  F2_i_1 
+   1          2        1    Node  F2_i_2 
+   1          2        1    Node  F2_i_3 
+   1          2        1    Node  F1_c_1 
+   1          2        1    Node  F1_c_2 
+   1          2        1    Node  F1_c_3 
+   2          2        1    Node  F3_c_1 
+   2          2        1    Node  F3_c_2 
+   2          2        1    Node  F3_c_3 
+=========
+  35/11         Best P-Term Total: 35
+                       Total Pins: 11
+                      Total Nodes: 25
+            Average P-Term/Output: 1
+
+
+Equations:
+
+F1 = (F1_c);
+
+F2 = (F2_c);
+
+F3 = (F3_c);
+
+F4 = (F1_i);
+
+F5 = (F2_i);
+
+F6 = (F3_i);
+
+F3_i = (!F3_c);
+
+F1_i = (!F1_c);
+
+A_c = (A);
+
+B_c = (B);
+
+C_c = (C);
+
+D_c = (D);
+
+E_c = (E);
+
+F1_c = (F1_c_3 & D_c);
+
+F2_c = (!F2_i);
+
+F3_c = (!F3_c_3 & D_c
+     # F3_c_3 & !D_c);
+
+A_c_i = (!A_c);
+
+B_c_i = (!B_c);
+
+C_c_i = (!C_c);
+
+D_c_i = (!D_c);
+
+E_c_i = (!E_c);
+
+F2_i = (F2_i_3 & D_c_i);
+
+F2_i_1 = (E_c_i & A_c_i);
+
+F2_i_2 = (B_c_i & C_c_i);
+
+F2_i_3 = (F2_i_1 & F2_i_2);
+
+F1_c_1 = (E_c & A_c);
+
+F1_c_2 = (B_c & C_c);
+
+F1_c_3 = (F1_c_1 & F1_c_2);
+
+F3_c_1 = (!E_c & A_c
+     # E_c & !A_c);
+
+F3_c_2 = (!B_c & C_c
+     # B_c & !C_c);
+
+F3_c_3 = (!F3_c_1 & F3_c_2
+     # F3_c_1 & !F3_c_2);
+
+
+Reverse-Polarity Equations:
+
+!F1 = (!F1_c);
+
+!F2 = (!F2_c);
+
+!F3 = (!F3_c);
+
+!F4 = (!F1_i);
+
+!F5 = (!F2_i);
+
+!F6 = (!F3_i);
+
+!A_c = (!A);
+
+!B_c = (!B);
+
+!C_c = (!C);
+
+!D_c = (!D);
+
+!E_c = (!E);
+

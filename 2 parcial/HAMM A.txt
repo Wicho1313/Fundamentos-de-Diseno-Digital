@@ -1,0 +1,40 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ENTITY HAMM IS
+	PORT(A, B, C, D: IN STD_LOGIC; 
+	P0, P1, P2, A1, B1, C1, D1: OUT STD_LOGIC);
+ATTRIBUTE PIN_NUMBERS OF HAMM: ENTITY IS
+"A:1 B:2 C:3 D:4"
+& " D1:23 C1:22 B1:21 P2:20"
+& " A1:19 P1:18 P0:17";
+
+END HAMM;
+
+ARCHITECTURE CIRCUITOS OF HAMM IS
+BEGIN
+	P0 <= ((NOT A) AND B) OR ((NOT A) AND D) OR (B AND D);
+	P1 <= A XOR C XOR D;
+	P2 <= ((NOT C) AND D) OR ((NOT C) AND B) OR (B AND D);
+        A1 <= A;
+        B1 <= B;
+	C1 <= C;
+        D1 <= D;
+END CIRCUITOS;
+                                 C22V10
+                 __________________________________________
+              A =| 1|                                  |24|* not used       
+              B =| 2|                                  |23|= D1           
+              C =| 3|                                  |22|= C1           
+              D =| 4|                                  |21|= B1           
+       not used *| 5|                                  |20|= P2           
+       not used *| 6|                                  |19|= A1       
+       not used *| 7|                                  |18|= P1           
+       not used *| 8|                                  |17|= P0       
+       not used *| 9|                                  |16|* not used        
+       not used *|10|                                  |15|* not used       
+       not used *|11|                                  |14|* not used       
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+                 Error Count = 0      Warning Count = 0

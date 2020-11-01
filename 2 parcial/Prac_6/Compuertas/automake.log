@@ -1,0 +1,10 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Verilog Test Fixture Template
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic2_0\ispcpld\bin\vhd2naf.exe -tfi -proj prac_6 -ext .tft -mod Entradas -tpl "C:\ispLEVER_Classic2_0\ispcpld\generic\verilog\tft.tft" -out "Entradas" -p "C:\ispLEVER_Classic2_0\ispcpld\generic" "compuertas.vhd"'
+
+Done: completed successfully.

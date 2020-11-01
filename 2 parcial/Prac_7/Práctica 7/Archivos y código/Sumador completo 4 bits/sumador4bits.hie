@@ -1,0 +1,2 @@
+suma.vhd #Entity suma 3
+suma.vhd #Architecture paralela suma 8

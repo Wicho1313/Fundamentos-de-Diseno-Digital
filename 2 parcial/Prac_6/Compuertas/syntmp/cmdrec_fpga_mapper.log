@@ -1,0 +1,10 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  "C:\users\paula robles\desktop\prac_6\compuertas"  -part ispGAL22LV10  -package LJ  -grade -4   -areadelay 0 -minc -RWCheckOnRam 1 -summaryfile "C:\users\paula robles\desktop\prac_6\compuertas\synlog\report\Entradas_fpga_mapper.xml" -top_level_module  Entradas  -multisrs  -oedif  "C:\users\paula robles\desktop\prac_6\compuertas\Entradas.edi"  -freq 1.000  "C:\users\paula robles\desktop\prac_6\compuertas\synwork\Entradas_mult.srs"  -devicelib  C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v  -ologparam  "C:\users\paula robles\desktop\prac_6\compuertas\syntmp\Entradas.plg"  -osyn  "C:\users\paula robles\desktop\prac_6\compuertas\Entradas.srm"  -prjdir  "c:\users\paula robles\desktop\prac_6\compuertas\"  -prjname  Entradas  -log  "C:\users\paula robles\desktop\prac_6\compuertas\synlog\Entradas_fpga_mapper.srr" 
+rc:0 success:1
+C:\users\paula robles\desktop\prac_6\compuertas\Entradas.edi|o|1523234442|9964
+C:\users\paula robles\desktop\prac_6\compuertas\synwork\Entradas_mult.srs|i|1523234436|1689
+C:\ispLEVER_Classic2_0\synpbase\lib\cpld\lattice.v|i|1401285984|210986
+"C:\users\paula robles\desktop\prac_6\compuertas\syntmp\Entradas.plg"|o|0|0
+C:\users\paula robles\desktop\prac_6\compuertas\Entradas.srm|o|1523234442|4943
+C:\users\paula robles\desktop\prac_6\compuertas\synlog\Entradas_fpga_mapper.srr|o|1523234442|1090
+C:\ispLEVER_Classic2_0\synpbase\bin\m_cpld.exe|i|1399390884|7067648
+C:\ispLEVER_Classic2_0\synpbase\bin64\m_cpld.exe|i|1399393722|8049664

@@ -1,0 +1,4 @@
+@W: CD266 :"C:\users\paula robles\desktop\prac_6\compuertas\compuertas.vhd":31:11:31:12|f1 is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"C:\users\paula robles\desktop\prac_6\compuertas\compuertas.vhd":32:11:32:12|f2 is not readable.  This may cause a simulation mismatch.
+@W: CD266 :"C:\users\paula robles\desktop\prac_6\compuertas\compuertas.vhd":33:11:33:12|f3 is not readable.  This may cause a simulation mismatch.
+

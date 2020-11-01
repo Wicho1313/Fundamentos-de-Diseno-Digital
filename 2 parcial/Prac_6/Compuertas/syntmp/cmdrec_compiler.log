@@ -1,0 +1,8 @@
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe  -osyn  "C:\users\paula robles\desktop\prac_6\compuertas\synwork\Entradas_comp.srs"  -top  Entradas  -prodtype  synplify_pro  -nostructver -dfltencoding sequential -encrypt  -pro  -dmgen  "C:\users\paula robles\desktop\prac_6\compuertas\dm"  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib  -lib work "C:\users\paula robles\desktop\prac_6\compuertas\compuertas.vhd" -loga  "C:\users\paula robles\desktop\prac_6\compuertas\Entradas.srr" 
+rc:0 success:1
+C:\users\paula robles\desktop\prac_6\compuertas\synwork\Entradas_comp.srs|o|1523234430|1936
+"C:\users\paula|i|0|0
+robles\desktop\prac_6\compuertas\compuertas.vhd"|i|0|0
+C:\users\paula robles\desktop\prac_6\compuertas\Entradas.srr|o|1523234430|1813
+C:\ispLEVER_Classic2_0\synpbase\bin\c_vhdl.exe|i|1401249098|2046976
+C:\ispLEVER_Classic2_0\synpbase\bin64\c_vhdl.exe|i|1401249304|5533184
